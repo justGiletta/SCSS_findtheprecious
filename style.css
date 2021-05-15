@@ -1,0 +1,51 @@
+
+.bg-orange
+{
+	background-color : #FE661D;
+}
+
+.bg-white
+{
+	background-color : white;
+}
+
+.bg-gris
+{
+	background-color : #DDD; 
+}
+
+
+.text-orange
+{
+	color : #FE661D;
+}
+
+.text-white
+{
+	color : white;
+}
+
+.text-noir
+{
+	color : black;
+}
+
+.text-gris
+{
+	color : #DDD;
+}
+
+header a
+{
+	color : white;
+}
+
+footer a
+{
+	color : white;
+}
+
+header .actif
+{
+	text-decoration : underline;
+}

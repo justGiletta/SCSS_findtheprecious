@@ -1,0 +1,43 @@
+@mixin ring ($taille, $color) {
+  content : '';
+  border-radius : 50%;
+  border : (2px  + 2px * $taille) solid $color;
+  padding : (15px + 10px * $taille);
+  margin : 20px;
+  display : inline-block;
+}
+
+#main h2 {
+  text-align : center;
+  display : inline-block;
+}
+
+.petit-anneau-orange {
+  @include ring(1.5, #ff6a08);
+}
+
+.gros-anneau-jaune {
+  @include ring(8, #fdcc09);
+}
+
+.row {
+  align-items : center;
+}
+
+header {
+  margin-bottom: 10vh;
+}
+
+footer {
+  margin-top : 10vh;
+}
+
+@for $i from 1 through 6 {
+  .anneaux>div:nth-child(#{$i}) {
+    @include ring($i*0.5, #222);
+    margin-left : -10px * $i;
+    margin-right : 5px * $i;
+    margin-bottom : 10px;
+    margin-top : 10px;
+  }
+}
